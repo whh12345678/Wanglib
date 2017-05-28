@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Wanglib.iml" filepath="$PROJECT_DIR$/Wanglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androiduilib/androiduilib.iml" filepath="$PROJECT_DIR$/androiduilib/androiduilib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androiduilib" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
