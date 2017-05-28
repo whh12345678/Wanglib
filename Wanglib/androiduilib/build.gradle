@@ -1,6 +1,15 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
+publish{
+    userOrg = 'whh'  /*<!--jcenter上注册的用户名-->*/
+    groupId = 'cn.com.yiqi.biz.androiduilib'
+    artifactId = 'cn.com.yiqi.biz.wnghaohan.lib'/*<!--自己的maven上添加的包名-->*/
+    publishVersion = '1.0.0'/*<!--版本号-->*/
+    desc = 'Android UI library'/*<!--描述-->*/
+    website = 'https://github.com/whh12345678/Wanglib.git'/*<!--自己lib的管理站点-->*/
+}
 android {
+    resourcePrefix "whh_" //随意填写
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
@@ -29,37 +38,3 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
 }
 
-
-ext {
-    bintrayRepo = 'maven'//下的仓库名
-    bintrayName = 'Wanglib'//仓库下的项目名
-
-    publishedGroupId = 'cn.com.yiqi.biz.androiduilib'//Model Package Name
-
-    libraryName = 'Wanglib'//Model Application/Library name（没啥用）
-    artifact = 'androiduilib'//Model 名
-
-    libraryDescription = 'This library is test for androiduilib'//描述
-
-    siteUrl = 'https://github.com/whh12345678/Wanglib.git'//
-    gitUrl = 'https://github.com/whh12345678/Wanglib.git'//
-
-    libraryVersion = '1.0.0'//Model版本号
-
-    developerId = 'wanghaohan'//
-    developerName = 'haohan-wang'//
-    developerEmail = 'Wanghaohan@17m.club'//
-
-    licenseName = 'The Apache Software License, Version 2.0'//
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'//
-    allLicenses = ["Apache-2.0"]//
-}
-
-publish {
-    userOrg = 'whh'      //bintray注册的用户名
-    groupId = 'com.wanghaohan'         //compile引用时的第1部分groupId
-    artifactId = 'androiduilib'     //compile引用时的第2部分项目名
-    publishVersion = '1.0.0'    //compile引用时的第3部分版本号
-    desc = 'This library is sumit for androiduilib '
-    website = 'https://github.com/whh12345678/Wanglib.git'
-}
