@@ -2,9 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 publish{
     userOrg = 'whh'
-    groupId = 'cn.com.yiq'
+    groupId = 'cn.com.yiqi'
     artifactId = 'wanghaohan.library'/*<!--自己的maven上添加的包名-->*/
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'Android UI library'
     website = 'https://github.com/whh12345678/Wanglib.git'
 }
